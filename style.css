@@ -1,0 +1,82 @@
+.circle{
+  height:5vh;
+  width:5vh;
+  animation:rotate 2s linear infinite;
+}
+ @keyframes rotate{
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+.li{
+  font-family: gilroy;
+  font-style: italic;
+}
+ul{
+  font-weight: 500;
+}
+
+.page3-content{
+  margin-left:10vw;
+  height:120vh;
+  
+}
+.page3 hr{
+  margin-left:10vw;
+}
+.card{
+  display:flex;
+  align-items: center;
+  margin-top:8vh;
+  margin-right:5vw;
+  position:relative;
+  border: 1px solid #222;
+  border-radius:15px;
+}
+.right-card{
+  font-size:1.2vw;
+  width:60%;
+  padding-left:5%;
+  padding-top:1vw;
+  padding-bottom:2vw;
+  position: relative;
+  z-index: 9;
+}
+.card1{
+  margin-top:10vh;
+}
+.last-card{
+  padding-bottom:20vh;
+}
+.left-card{
+  width:30%;
+  margin-top:2vw;
+  padding:3vw;
+  position: relative;
+  z-index: 9;
+}
+.over{
+  height:1%;
+  width:100%;
+  position:absolute;
+  background-color:#FCD34D;
+  top:0;
+  opacity: 0;
+  border-radius:15px;
+}
+.card:hover{
+  transition:all cubic-bezier(0.19,1,0.22,1) 1s;
+  
+}
+.card:hover .over{
+  height:100%;
+  opacity: 1;
+  transition:all cubic-bezier(0.19,1,0.22,1) 1s;
+}
+.card:hover .left-card{
+  margin-left:4vw;
+  transition:all cubic-bezier(0.19,1,0.22,1) 1s;
+}
