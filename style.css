@@ -11,6 +11,84 @@
         transform: rotate(360deg);
       }
     }
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  /* Adjustments for the main container */
+  .main {
+    width: 100%;
+  }
+
+  /* Adjustments for page1 */
+  .page1 {
+    font-size: 1.25rem;
+    padding: 30px;
+  }
+
+  .page1 h1 {
+    font-size: 2rem;
+  }
+
+  .page1 ul {
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  /* Adjustments for page2 */
+  .page2 .nav .ul {
+    flex-direction: row;
+    justify-content: space-around;
+    top: 0;
+    padding: 10px 0;
+  }
+
+  .page2 .content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .page2 .content .w-1/2 {
+    width: 48%;
+    padding: 20px;
+  }
+
+  .page2 .image img {
+    height: auto;
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: row;
+    gap: 15px;
+    width: auto;
+    align-items: center;
+  }
+
+  /* Adjustments for page3 */
+  .page3 .page-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page3-left, .page3-content {
+    padding-left:15px;
+    width: 90%;
+    margin: 0;
+  }
+.page3-content{
+  padding-left:35px;
+    width: 80%;
+    margin: 0;
+}
+  .card {
+    margin-bottom: 20px;
+    height:10vh;
+  }
+
+  .left-card, .right-card {
+    text-align: center;
+    padding: 15px;
+  }
+}
 .li{
   font-family: gilroy;
   font-style: italic;
