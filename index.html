@@ -4,77 +4,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.8/dist/locomotive-scroll.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
-<div class="main w-screen relative" data-scroll-container>
-    <div class="page1 bg-black text-2xl text-white relative font-mono flex justify-center  h-screen m-y-{1vh} z-0">
+<div class="main w-screen relative" data-scroll-container >
+    <div class="page1 bg-black text-2xl text-white relative font-mono flex justify-center  h-screen m-y-{1vh} z-0 fixed top-0 left-0">
        
-      <h1 class="text-center mt-4 relative font-bold "><span>PortFolio</span> Website <br> 2024</h1>
+      <h1 class=" h1 text-center mt-4 relative font-bold "><span>PortFolio</span> Website <br> 2024</h1>
       <ul class="flex absolute top-2/4 justify-center align-center gap-x-2.5 text-3xl  ">
       <li >Kunal</li>
       <li class=" li text-green-600">Sunaria</li>
       <li>is</li>
       <li>a</li>
       </ul>
-        <div class="loader-text absolute bottom-6 font-bold text-2xl">0%</div>
+      <div class="loader-text absolute bottom-6 font-bold text-2xl">0%</div>
     </div>
-    
     <div class="page2 h-screen w-screen bg-white absolute">
     <div class="nav h-20 w-full  relative ">
-      <div class=" relative ul flex justify-evenly list-none top-1/2 font-mono font-semibold ">             <li>Home</li>
-             <li>About</li>
-             <li>Portfolio</li>
-             <li>Contact</li></div>
-             </div>
-     <div class="content h-80 w-full flex flex-wrap ">
-       <div class=" relative top-12 font-mono w-1/2 pl-10 ">
+      <div class=" relative ul flex justify-evenly list-none top-1/2 font-mono font-semibold ">
+         <li>Home</li>
+         <li>About</li>
+         <li>Portfolio</li>
+         <li>Contact</li>
+      </div>
+    </div>
+    <div class="content h-80 w-full flex flex-wrap ">
+       <div class="section relative top-40 font-mono w-1/2 pl-10 ">
          <h2 class="text-6xl font-gray-700 font-extralight">We Have Design Expierience </h2>
-      <p class="para font-light mt-10"> we can create responsive web designs with beautifull animations and graphics using html css and js </p>
-       <div class="buttons mt-10 flex justify-between w-80  "> 
-       <button id="b1" class="pt-2 pb-2 pl-4 pr-4
+         <p class="para font-light mt-10"> we can create responsive web designs with beautifull animations and graphics using html css and js </p>
+         <div class="buttons mt-10 flex justify-between w-80  "> 
+            <button id="b1" class="pt-2 pb-2 pl-4 pr-4
     rounded-2xl border-none font-semibold bg-blue-400 " >LET'S TALK <i class="ri-telegram-line"></i> </button>
-                    <button id="b2" class="pr-1.5"  >PORTFOLIO <i class="ri-arrow-right-up-line "></i> </button>
+            <button id="b2" class="pr-1.5"  >PORTFOLIO <i class="ri-arrow-right-up-line "></i> </button>
+         </div>
        </div>
-
-             </div>
-     <div class="image w-1/2  h-screen overflow-x-scroll relative top-8"><img class="h-full w-full opacity-95 contrast-200" src="img.png" alt=""></div>
-             </div>
+       <div class="image w-1/2  h-screen overflow-x-scroll relative top-8">
+          <img id="WeaveImage" class="h-full w-full opacity-95 contrast-200" src="img.png" alt="">
+       </div>
     </div>
-    <div class="page3  top-32 bg-yellow-50 relative  w-screen ">  
-    <div class="page-content overflow-hidden bg-yellow-50 flex relative  top-30 ">   
+    </div>
+    <div class="page3  top-32  relative  w-screen ">  
+    <div class="page-content  flex relative  top-30 ">   
     <div class="page3-left  w-1/2 h-full">  
-
      <h3 class="text-6xl pt-16 text-rose-400 text-center pl-10 font-semibold   font-mono ">Our Services</h3>
-      <p class=" pt-10 pl-10 text-gray-800 font-mono text-center">Our services offer custom website design, SEO optimization, and digital marketing strategies. We create visually appealing, user-friendly sites, whether it's a portfolio, e-commerce platform, or business website. With a focus on innovation and quality, we deliver unique digital experiences that enhance your online presence and effectively communicate your brand's message.</p>
-      </div>
+      <p class=" para pt-10 pl-10 text-gray-800 font-mono text-center">Our services offer custom website design, SEO optimization, and digital marketing strategies. We create visually appealing, user-friendly sites, whether it's a portfolio, e-commerce platform, or business website. With a focus on innovation and quality, we deliver unique digital experiences that enhance your online presence and effectively communicate your brand's message.</p>
+    </div>
     <div class="page3-content  w-1/2 relative top-0">
-    <div class="card bg-yellow-100 card1">
-      <div class="over"></div>
-      <h2 class="left-card text-center text-xl  relative">UI DESIGN</h2>
-      <div class="right-card text-center">Create visually appealing interfaces with intuitive layouts, colors, and typography for a seamless user experience.</div>
-    </div>
-    <div class="card bg-yellow-100 card2">
-      <div class="over over2"></div>
-      <h2 class="left-card text-center text-xl ">UX DESIGN</h2>
-      <div class="right-card text-center">Enhance user satisfaction through research-driven insights, optimizing usability, and crafting intuitive, accessible experiences.</div>
-    </div>
-    <div class="card bg-yellow-100 card3">
-          <div class="over over3"></div>
-      <h2 class="left-card last-card text-center text-xl">Product Design</h2>
-      <div class="right-card text-center">Develop functional, innovative products that balance user needs, market trends, and technical feasibility from concept to completion.</div>
-    </div>
-
-    </div></div>
-
+      <div class="card bg-yellow-50  card1">
+         <div class="over"></div>
+         <h2 class="left-card text-center text-xl  relative">UI DESIGN</h2>
+         <div class="right-card text-center">Create visually appealing interfaces with intuitive layouts, colors, and typography for a seamless user experience.</div>
       </div>
+      <div class="card bg-yellow-50  card2">
+         <div class="over over2"></div>
+         <h2 class="left-card text-center text-xl ">UX DESIGN</h2>
+         <div class="right-card text-center">Enhance user satisfaction through research-driven insights, optimizing usability, and crafting intuitive, accessible experiences.</div>
+      </div>
+      <div class="card bg-yellow-50 card3">
+         <div class="over over3"></div>
+         <h2 class="left-card last-card text-center text-xl">Product Design</h2>
+         <div class="right-card text-center">Develop functional, innovative products that balance user needs, market trends, and technical feasibility from concept to completion.</div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="page4 h-screen w-screen bg-black relative">
+      <div id="text4">
+          <h5>PROJECT</h5>
+          <h1>LATEST <br>PROJECTS</h1>
+      </div>
+      <div id="project">
+          <div class="projects p1">
+              <div id="text3">
+                  <h1>Plantsop Landing <br>Page Design </h1>
+                  <div class="circle"><i class="ri-arrow-right-up-line"></i></div>
+              </div>
+              <div id="image">
+                  <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+              </div>
+          </div>
+          <div class="projects p2">
+              <div id="text3">
+                  <h1>VPS HOSTING <br>WEBSITE Design </h1>
+                  <div class="circle"><i class="ri-arrow-right-up-line"></i></div>
+              </div>
+              <div id="image">
+                  <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+              </div>
+          </div>
+          <div class="projects p3">
+              <div id="text3">
+                  <h1>BOOK Landing PAGE<br> Design </h1>
+                  <div class="circle"><i class="ri-arrow-right-up-line"></i></div>
+              </div>
+              <div id="image">
+                  <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="">
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.8/dist/locomotive-scroll.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.8/dist/locomotive-scroll.min.css">
+
+<!--  Gsap is needed for Basic Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Scroll Trigger is needed for Scroll Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+
 <script src="script.js"></script>
 
 </body>
